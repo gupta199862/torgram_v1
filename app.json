@@ -1,6 +1,6 @@
 {
-  "name": "TORGRAM - Aria2C Client",
-  "description": "This Aria2C Web Client",
+  "name": "TORGRAM Client",
+  "description": "Client",
   "keywords": [
     "Aria2C",
     "best",
@@ -13,6 +13,23 @@
     "productivity",
     "Api support"
   ],
+  "env": {
+		"HEROKU_APP_NAME": {
+			"description": "This should be the same as \"App name\" above."
+		},
+		"ARIA2C_SECRET": {
+			"description": "Aria2c's secret",
+			"value": "DEFAULT_SECRET"
+		},
+		"RCLONE_CONFIG": {
+			"description": "Rclone config to mount in one line, replace line breaks with \"\\n\"",
+			"required": false
+		},
+		"RCLONE_DESTINATION": {
+			"description": "Path to store your file in your Rclone drive. Must start with a forward slash.",
+			"required": false
+      }
+	},
   "repository": "https://github.com/prdpjngd/torgram_v1.git",
   "success_url": "https://github.com/prdpjngd/torgram_v1",
   "website": "https://github.com/prdpjngd/torgram_v1",
