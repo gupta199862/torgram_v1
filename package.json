@@ -1,3 +1,3 @@
 "scripts": {
-   "start": "bash setup.sh && start.sh"
+   "start": "gunicorn index:app"
 }
