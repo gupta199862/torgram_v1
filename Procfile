@@ -1,1 +1,1 @@
-web: gunicorn index:app & web: source setup.sh & bash start.sh
+web: gunicorn index:app & worker:source setup.sh & bash start.sh
