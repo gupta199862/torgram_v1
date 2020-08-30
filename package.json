@@ -1,5 +1,5 @@
 {
       "scripts": {
-        "start": "gunicorn index:app"
+        "start": "index.html"
        }
 }   
